@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Digital Skills Training</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: #004080;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      justify-content: flex-start;
+    }
+    header img {
+      height: 70px;
+    }
+    header .site-name {
+      font-size: 2rem;
+      font-weight: bold;
+      user-select: none;
+    }
+    nav {
+      margin-left: auto;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 2rem;
+      background: #f0f8ff;
+      text-align: center;
+    }
+    .about {
+      padding: 2rem;
+      background: #fff;
+    }
+    .about img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    .contact-info {
+      background: #e8f4ff;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      margin: 1rem 2rem 2rem 2rem;
+      font-size: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .contact-info span {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .contact-info svg {
+      fill: #004080;
+      width: 20px;
+      height: 20px;
+    }
+    .courses {
+      background: #e8f4ff;
+      padding: 2rem;
+    }
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .course-card {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .course-card img {
+      width: 50px;
+      height: 50px;
+    }
+    .registration {
+      background: #f9f9f9;
+      padding: 2rem;
+    }
+    .registration form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .registration h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .registration label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    .registration input,
+    .registration select,
+    .registration textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .registration button {
+      display: block;
+      width: 100%;
+      background: #004080;
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    /* Action buttons */
+    .action-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      z-index: 1000;
+    }
+    .action-btn {
+      width: 50px;
+      height: 50px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 50px;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+    }
+    .call-btn {
+      background-color: #004080;
+    }
+    .action-btn:hover {
+      filter: brightness(85%);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.postimg.cc/fLjvvdJp/nature-logo-Copy.jpg" alt="Logo" />
+    <div class="site-name">Natures E-Services</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#register">Register</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Empowering Communities with Digital Skills</h1>
+    <p>Join our training programs and unlock opportunities in the digital world.</p>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Our Program</h2>
+    <p>We train individuals in both rural and urban communities with essential digital literacy skills to thrive in today's tech-driven world. Our programs are tailored for absolute beginners and those seeking to advance their computer competence. With hands-on, instructor-led sessions, every participant gains real, practical experience in using Microsoft Office applications, navigating the internet safely, managing files, composing emails, and collaborating online. We focus on empowering people with tools and confidence to pursue jobs, grow businesses, and participate meaningfully in the digital economy.</p>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+      <img src="https://i.postimg.cc/hjPXHQ2H/IMG-20250702-WA0008.jpg" alt="Training 1" />
+      <img src="https://i.postimg.cc/RFsW9C8q/IMG-20250702-WA0009.jpg" alt="Training 2" />
+      <img src="https://i.postimg.cc/d097Hjj2/IMG-20250702-WA0010.jpg" alt="Training 3" />
+    </div>
+  </section>
+
+  <section class="contact-info" aria-label="Contact Information">
+    <span>
+      <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.054 15.054 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.5a1 1 0 01-1 1C10.22 21.5 2.5 13.78 2.5 3a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.2 2.2z"/></svg>
+      <strong>Phone:</strong> +2348081117380
+    </span>
+    <span>
+      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
+      <strong>Address:</strong> 184, British American, Jos Plateau State - Nigeria
+    </span>
+  </section>
+
+  <section id="courses" class="courses">
+    <h2>Our Courses</h2>
+    <div class="course-grid">
+      <div class="course-card">
+        <img src="https://img.icons8.com/color/48/search--v1.png" alt="Internet Research" />
+        <h3>Internet Research & Reporting</h3>
+        <p>Develop skills to find, evaluate, and report information from online sources effectively.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://img.icons8.com/color/48/artificial-intelligence.png" alt="AI Utilization" />
+        <h3>Utilization of AI</h3>
+        <p>Explore how to use AI tools to boost productivity, creativity, and problem-solving.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://img.icons8.com/color/48/000000/microsoft-word-2019.png" alt="Word" />
+        <h3>Microsoft Word</h3>
+        <p>Learn to create, format, and edit professional documents.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://img.icons8.com/color/48/000000/microsoft-excel-2019.png" alt="Excel" />
+        <h3>Microsoft Excel</h3>
+        <p>Master data organization, formulas, and spreadsheet analysis.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://img.icons8.com/color/48/000000/microsoft-powerpoint-2019.png" alt="PowerPoint" />
+        <h3>Microsoft PowerPoint</h3>
+        <p>Design impactful presentations using visual tools.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://img.icons8.com/color/48/000000/internet.png" alt="Internet" />
+        <h3>Introduction to Internet</h3>
+        <p>Understand the basics of using the internet safely and effectively.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://img.icons8.com/color/48/000000/google-docs.png" alt="Google Docs" />
+        <h3>Google Docs</h3>
+        <p>Create and collaborate on documents in the cloud.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://img.icons8.com/fluency/48/computer.png" alt="Fundamentals" />
+        <h3>Fundamentals of Computer</h3>
+        <p>Learn essential computer components, hardware and software use.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://img.icons8.com/color/48/windows-10.png" alt="Windows Overview" />
+        <h3>Windows Overview</h3>
+        <p>Explore Windows OS features, file management and settings.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://img.icons8.com/color/48/web.png" alt="Google Search" />
+        <h3>Using Google Search</h3>
+        <p>Improve information retrieval using advanced search techniques.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://img.icons8.com/fluency/48/email-open.png" alt="Email" />
+        <h3>Email & Communication</h3>
+        <p>Use email tools for personal and professional communication.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://img.icons8.com/color/48/online-store.png" alt="E-Commerce" />
+        <h3>E-Commerce</h3>
+        <p>Set up and manage online stores and transactions.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://img.icons8.com/color/48/blog.png" alt="Blog Creation" />
+        <h3>Blog Creation</h3>
+        <p>Design and publish personal or business blogs easily.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://img.icons8.com/color/48/microchip.png" alt="Embedded Systems" />
+        <h3>Embedded Systems</h3>
+        <p>Understand embedded tech used in IoT and smart devices.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://img.icons8.com/color/48/design.png" alt="Graphic Design" />
+        <h3>Graphic Design</h3>
+        <p>Design creative content using CorelDraw and Canva tools.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://img.icons8.com/color/48/network-cable.png" alt="Networking" />
+        <h3>Computer Networking</h3>
+        <p>Learn wired/wireless networking and basic protocols.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://img.icons8.com/color/48/database.png" alt="Database Management" />
+        <h3>Database Management</h3>
+        <p>Manage data using Microsoft Access and MySQL tools.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://img.icons8.com/color/48/combo-chart--v1.png" alt="Data Analysis" />
+        <h3>Data Analysis</h3>
+        <p>Analyze data using Excel, SQL, and Python scripts.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://img.icons8.com/color/48/source-code.png" alt="Web Design" />
+        <h3>Web Design</h3>
+        <p>Create responsive websites using HTML, CSS, JS & WordPress.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="register" class="registration">
+    <h2>Register for a Course</h2>
+    <form id="registrationForm" method="post">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email (optional)</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="course">Select Course</label>
+      <select id="course" name="course" required>
+        <option value="">-- Select a Course --</option>
+        <option>Digital Skills Beginner (Fundamentals of Computer, Windows Overview, Microsoft Word, Introduction to Internet and Google Docs, PowerPoint, Excel)</option>
+        <option>E-Commerce</option>
+        <option>Blog Creation</option>
+        <option>Embedded Systems</option>
+        <option>Graphic Design</option>
+        <option>Computer Networking</option>
+        <option>Database Management</option>
+        <option>Data Analysis</option>
+        <option>Web Design</option>
+      </select>
+
+      <label for="message">Additional Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Optional"></textarea>
+
+      <button type="submit">Submit Registration</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Natures e-Services. All rights reserved.</p>
+  </footer>
+
+  <div class="action-buttons">
+    <a href="tel:+2348081117380" class="action-btn call-btn" title="Call Us">📞</a>
+    <a href="https://wa.me/2348081117380" target="_blank" rel="noopener" class="action-btn whatsapp-btn" title="Chat on WhatsApp">💬</a>
+  </div>
+
+  <script src="https://checkout.flutterwave.com/v3.js"></script>
+  <script>
+    const form = document.getElementById('registrationForm');
+    const courseSelect = document.getElementById('course');
+
+    const priceLabel = document.createElement('p');
+    priceLabel.style.fontWeight = 'bold';
+    priceLabel.style.fontSize = '1rem';
+    priceLabel.style.marginTop = '-0.5rem';
+    priceLabel.style.marginBottom = '1rem';
+    form.insertBefore(priceLabel, document.getElementById('message'));
+
+    const coursePrices = {
+      'Digital Skills Beginner (Fundamentals of Computer, Windows Overview, Microsoft Word, Introduction to Internet and Google Docs, PowerPoint, Excel)': 65000,
+      'E-Commerce': 50000,
+      'Blog Creation': 50000,
+      'Embedded Systems': 50000,
+      'Graphic Design': 65000,
+      'Computer Networking': 65000,
+      'Database Management': 105000,
+      'Data Analysis': 190000,
+      'Web Design': 280000
+    };
+
+    courseSelect.addEventListener('change', () => {
+      const selectedCourse = courseSelect.value;
+      if (coursePrices[selectedCourse]) {
+        priceLabel.textContent = `Course Price: ₦${coursePrices[selectedCourse].toLocaleString()}`;
+      } else {
+        priceLabel.textContent = '';
+      }
+    });
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const name = form.name.value.trim();
+      const email = form.email.value.trim() || "No email provided";
+      const phone = form.phone.value.trim();
+      const course = form.course.value;
+
+      if (!coursePrices[course]) {
+        alert("Please select a valid course.");
+        return;
+      }
+
+      const amount = coursePrices[course];
+
+      FlutterwaveCheckout({
+        public_key: "FLWPUBK-1faf4f411e5246b1db7fdfdb285c2f82-X",
+        tx_ref: "tx_" + Date.now(),
+        amount: amount,
+        currency: "NGN",
+        payment_options: "card,ussd",
+        customer: {
+          name: name,
+          email: email,
+          phone_number: phone,
+        },
+        customizations: {
+          title: "Natures E-Services Course Payment",
+          description: `Payment for ${course}`,
+          logo: "https://i.postimg.cc/fLjvvdJp/nature-logo-Copy.jpg",
+        },
+        callback: function (data) {
+          if (data.status === "successful") {
+            alert("Payment successful! Thank you for registering.");
+            form.reset();
+            priceLabel.textContent = "";
+          } else {
+            alert("Payment not completed. Please try again.");
+          }
+        },
+        onclose: function() {
+          // User closed the payment modal
+        },
+      });
+    });
+  </script>
+</body>
+</html>
